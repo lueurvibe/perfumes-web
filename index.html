@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Lueur Vibe Store</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #222;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #0a0a23;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    section {
+      padding: 20px;
+      text-align: center;
+    }
+    .intro {
+      max-width: 800px;
+      margin: auto;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    .category-buttons {
+      margin-top: 30px;
+    }
+    .category-buttons button {
+      background-color: #1c1c3c;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 15px 30px;
+      margin: 15px;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .category-buttons button:hover {
+      background-color: #3b3b6e;
+    }
+    .perfume-list {
+      display: none; /* Ocultamos por defecto */
+      padding: 20px;
+    }
+    .perfume {
+      display: inline-block;
+      width: 220px;
+      margin: 15px;
+      text-align: center;
+      vertical-align: top;
+    }
+    .perfume img {
+      width: 200px;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    footer {
+      background-color: #0a0a23;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+    footer a {
+      color: #f4d03f;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Lueur Vibe Store</h1>
+    <p>Perfumes originales – Elegancia y Exclusividad</p>
+  </header>
+
+  <section class="intro">
+    <h2>Bienvenido a Lueur Vibe Store</h2>
+    <p>
+      En <b>Lueur Vibe Store</b> creemos que cada fragancia es una huella invisible que refleja tu esencia,
+      tu personalidad y tu momento de vida. Nos apasiona ofrecer perfumes 100% originales, cuidadosamente seleccionados 
+      para quienes buscan distinción, frescura y elegancia en cada ocasión. 
+      Nuestra misión es acercarte las fragancias más icónicas y exclusivas a precios accesibles, 
+      con presentaciones tanto en frasco completo como en decants, ideales para que explores sin límites.  
+      Descubre con nosotros la magia de oler increíble cada día.  
+    </p>
+
+    <div class="category-buttons">
+      <button onclick="mostrarCategoria('hombres')">Perfumes Hombre</button>
+      <button onclick="mostrarCategoria('mujeres')">Perfumes Mujer</button>
+    </div>
+  </section>
+
+  <!-- PERFUMES HOMBRES -->
+  <section id="hombres" class="perfume-list">
+    <h2>Perfumes de Hombre</h2>
+    <div class="perfume">
+      <img src="perfumes/lebeau.jpg" alt="Le Beau Le Parfum">
+      <h3>Le Beau Le Parfum – Jean Paul Gaultier (125 ml – S/ 569)</h3>
+      <p>2 ml → S/ 14<br>3 ml → S/ 20<br>5 ml → S/ 34<br>10 ml → S/ 68</p>
+    </div>
+
+    <div class="perfume">
+      <img src="perfumes/valentino.jpg" alt="Valentino Uomo Born In Roma Intense">
+      <h3>Valentino Uomo Born In Roma Intense (100 ml – S/ 605)</h3>
+      <p>2 ml → S/ 18<br>3 ml → S/ 27<br>5 ml → S/ 45<br>10 ml → S/ 91</p>
+    </div>
+
+    <div class="perfume">
+      <img src="perfumes/Armaf.jpg" alt="Odyssey Mandarin Sky – Armaf">
+      <h3>Odyssey Mandarin Sky – Armaf (100 ml – S/ 199)</h3>
+      <p>2 ml → S/ 6<br>3 ml → S/ 10<br>5 ml → S/ 17<br>10 ml → S/ 34</p>
+    </div>
+
+    <div class="perfume">
+      <img src="perfumes/stronger.jpg" alt="Emporio Armani Stronger With You Intensely">
+      <h3>Emporio Armani Stronger With You Intensely (100 ml – S/ 569)</h3>
+      <p>2 ml → S/ 17<br>3 ml → S/ 25<br>5 ml → S/ 42<br>10 ml → S/ 85</p>
+    </div>
+
+    <div class="perfume">
+      <img src="perfumes/creed.jpg" alt="Creed Aventus">
+      <h3>Creed Aventus (100 ml – S/ 1,049)</h3>
+      <p>2 ml → S/ 34<br>3 ml → S/ 50<br>5 ml → S/ 84<br>10 ml → S/ 168</p>
+    </div>
+
+    <div class="perfume">
+      <img src="perfumes/dior.jpg" alt="Dior Sauvage Elixir">
+      <h3>Dior Sauvage Elixir (60 ml – S/ 1,050)</h3>
+      <p>2 ml → S/ 56<br>3 ml → S/ 84<br>5 ml → S/ 140<br>10 ml → S/ 280</p>
+    </div>
+
+    <!-- Bleu de Chanel -->
+    <div class="perfume">
+      <img src="perfumes/Bleu.jpg" alt="Bleu de Chanel">
+      <h3>Bleu de Chanel (EDP 100 ml – S/ 590)</h3>
+      <p>2 ml → S/ 40<br>3 ml → S/ 55<br>5 ml → S/ 80<br>10 ml → S/ 140</p>
+    </div>
+
+    <!-- Acqua di Giò Parfum -->
+    <div class="perfume">
+      <img src="perfumes/Acqua.jpg" alt="Acqua di Giò Parfum">
+      <h3>Acqua di Giò Parfum – Giorgio Armani (100 ml – S/ 570)</h3>
+      <p>2 ml → S/ 38<br>3 ml → S/ 52<br>5 ml → S/ 78<br>10 ml → S/ 135</p>
+    </div>
+  </section>
+
+  <!-- PERFUMES MUJERES -->
+  <section id="mujeres" class="perfume-list">
+    <h2>Perfumes de Mujer</h2>
+    <div class="perfume">
+      <img src="perfumes/idole.jpg" alt="Lancôme Idôle Nectar">
+      <h3>Lancôme Idôle Nectar (50 ml – S/ 399)</h3>
+      <p>2 ml → S/ 24<br>3 ml → S/ 36<br>5 ml → S/ 60<br>10 ml → S/ 120</p>
+    </div>
+
+    <div class="perfume">
+      <img src="perfumes/prada.jpg" alt="Prada Paradoxe Intense">
+      <h3>Prada Paradoxe Intense (50 ml – S/ 729)</h3>
+      <p>2 ml → S/ 44<br>3 ml → S/ 66<br>5 ml → S/ 110<br>10 ml → S/ 219</p>
+    </div>
+
+    <div class="perfume">
+      <img src="perfumes/cloud.jpg" alt="Ariana Grande Cloud">
+      <h3>Ariana Grande Cloud (100 ml – S/ 473)</h3>
+      <p>2 ml → S/ 14<br>3 ml → S/ 21<br>5 ml → S/ 36<br>10 ml → S/ 71</p>
+    </div>
+
+    <div class="perfume">
+      <img src="perfumes/sweet.jpg" alt="Sabrina Carpenter Sweet Tooth">
+      <h3>Sabrina Carpenter Sweet Tooth (100 ml – S/ 480)</h3>
+      <p>2 ml → S/ 15<br>3 ml → S/ 23<br>5 ml → S/ 39<br>10 ml → S/ 77</p>
+    </div>
+
+    <!-- Good Girl -->
+    <div class="perfume">
+      <img src="perfumes/Good Girl.jpg" alt="Good Girl">
+      <h3>Good Girl – Carolina Herrera (EDP 80 ml – S/ 520)</h3>
+      <p>2 ml → S/ 32<br>3 ml → S/ 45<br>5 ml → S/ 70<br>10 ml → S/ 125</p>
+    </div>
+
+    <!-- La Vie Est Belle -->
+    <div class="perfume">
+      <img src="perfumes/La Vie.jpg" alt="La Vie Est Belle">
+      <h3>La Vie Est Belle – Lancôme (EDP 100 ml – S/ 520)</h3>
+      <p>2 ml → S/ 34<br>3 ml → S/ 48<br>5 ml → S/ 72<br>10 ml → S/ 128</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>Contáctanos: 
+      <a href="https://www.instagram.com/lueervibe.pe" target="_blank">Instagram</a> | 
+      <a href="https://www.facebook.com/LueurVibeStore" target="_blank">Facebook</a> | 
+      <a href="https://wa.me/51936408681" target="_blank">WhatsApp</a>
+    </p>
+    <p>&copy; 2025 Lueur Vibe Store</p>
+  </footer>
+
+  <script>
+    function mostrarCategoria(categoria) {
+      // Ocultar ambas listas
+      document.getElementById("hombres").style.display = "none";
+      document.getElementById("mujeres").style.display = "none";
+
+      // Mostrar solo la categoría elegida
+      document.getElementById(categoria).style.display = "block";
+
+      // Hacer scroll hacia los perfumes
+      document.getElementById(categoria).scrollIntoView({behavior: "smooth"});
+    }
+  </script>
+</body>
+</html>
